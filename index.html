@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="left">
+                    <h1>Flower delivery</h1>
+                    <h3>florist</h3>
+                </div>
+                <div class="right visible-lg visible-md">
+                    <h3>+380990775663</h3>
+                    <button onclick="collBackIn()"><h3>call back</h3></button>
+                </div>
+            </div>
+            <div class="promo-text">
+                <h1>Free packing!</h1>
+                <h2>for orders over $ 50</h2>
+            </div>
+            <a href="#scroll" class="arrow_box">
+                <div class="arrow-1"></div>
+                <div class="arrow-2"></div>
+                <div class="arrow-3"></div>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="container v" id="scroll"></div>
+    <h1 class="text-center v-text">Benefits</h1>
+<div class="container v-2"></div>
+
+<div class="container cop">
+    <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+            <img src="img/ok.png" alt="">
+            <h2>Qualitatively</h2>
+        </div>
+        <div class="col-md-4 wow fadeInUp">
+            <img src="img/clock.png" alt="">
+            <h2>Fast</h2>
+        </div>
+        <div class="col-md-4 wow fadeInRight">
+            <img src="img/pig.png" alt="">
+            <h2>Сheap</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container v"></div>
+    <h1 class="text-center v-text">Order</h1>
+<div class="container v-2"></div>
+
+<div class="container how">
+    <div class="row">
+        <div class="col-md-6 wow fadeInLeft">
+            <h2>How to make an order?</h2>
+            <h3 class="info">After your order you will be contacted by our manager and update information on your order. If necessary meedzher can help adjust your order, or add to it.</h3>
+        </div>
+        <ul class="col-md-6  wow fadeInRight">
+            <li class="col-md-12">
+                <div class="text"><h3>Select a bouquet in the catalog</h3></div>
+            </li>
+            <li class="col-md-12">
+                <div class="text"><h3>Send inquiry in topic cart</h3></div>
+            </li>
+            <li class="col-md-12">
+                <div class="text"><h3>Manager will contact you to confirm or verify the order</h3></div>
+            </li>
+            <li class="col-md-12">
+                <div class="text"><h3>In your email will go to pay the invoice</h3></div>
+            </li>
+            <li class="col-md-12">
+                <div class="text"><h3>Congratulations, your order has been sent!</h3></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container v"></div>
+    <h1 class="text-center v-text">Catalog</h1>
+<div class="container v-2"></div>
+
+<div class="container bouquets">
+
+        <div class="container">
+            <div class="row">
+
+                <ul class="portfolio-sorting list-inline">
+                    <li><a href="#" data-group="all" class="active"><h3>All</h3></a></li>
+                    <li><a href="#" data-group="march"><h3>March 8</h3></a></li>
+                    <li><a href="#" data-group="wedding"><h3>Wedding</h3></a></li>
+                    <li><a href="#" data-group="vd"><h3>Valentine's Day</h3></a></li>
+                </ul> <!--end portfolio sorting -->
+
+                <ul class="catalog-list list-unstyled  wow fadeInUp"  id="grid">
+
+                    <li class=" col-md-4 col-sm-4" data-groups='["vd"]'>
+                        <figure class="portfolio-item">
+                            <a href="#" onclick="event.preventDefault()">
+                                <img src="img/bouquets/1.png" alt="Item 1" class="img-responsive">
+                                <img src="img/bouquets/hover.png" class="img-responsive hover-img"  data-price="25" data-full-title="Real love" data-title="Real1" data-img="img/bouquets/1.png">
+                                <h2 class="tite">Real love</h2>
+                                <h3 class="price">25 USD</h3>
+                            </a>
+                        </figure>
+                    </li>
+                    <li class=" col-md-4 col-sm-4" data-groups='["vd"]'>
+                        <figure class="portfolio-item">
+                            <a href="#" onclick="event.preventDefault()">
+                                <img src="img/bouquets/2.png" alt="Item 1" class="img-responsive">
+                                <img src="img/bouquets/hover.png" class="img-responsive hover-img" data-price="25" data-title="Real2" data-img="img/bouquets/2.png">
+                                <h2 class="tite">Real love</h2>
+                                <h3 class="price">25 USD</h3>
+                            </a>
+                        </figure>
+                    </li>
+                    <li class=" col-md-4 col-sm-4" data-groups='["march", "wedding"]'>
+                        <figure class="portfolio-item">
+                            <a href="#" onclick="event.preventDefault()">
+                                <img src="img/bouquets/3.png" alt="Item 1" class="img-responsive">
+                                <img src="img/bouquets/hover.png" class="img-responsive hover-img" data-price="25" data-title="love" data-img="img/bouquets/3.png">
+                                <h2 class="tite">Real love</h2>
+                                <h3 class="price">25 USD</h3>
+                            </a>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-4" data-groups='["wedding"]'>
+                        <figure class="portfolio-item">
+                            <a href="#" onclick="event.preventDefault()">
+                                <img src="img/bouquets/1.png" class="img-responsive">
+                                <img src="img/bouquets/hover.png" class="img-responsive hover-img" data-price="25" data-title="Real" data-img="img/bouquets/1.png">
+                                <h2 class="tite">Real love</h2>
+                                <h3 class="price">5 USD</h3>
+                            </a>
+                        </figure>
+                    </li>
+                    <!-- sizer -->
+                    <li class="col-md-4 col-sm-4 col-xs-6 shuffle_sizer"></li>
+                </ul> <!--end portfolio grid -->
+            </div> <!--end row -->
+        </div> <!-- end container-->
+</div>
+
+<div class="container v"></div>
+    <h1 class="text-center v-text">Cart</h1>
+<div class="container v-2"></div>
+
+<div class="container cart">
+    <div class="info"><h3>Your cart is empty</h3></div>
+    <ol class="list-cart"></ol>
+    <div class="container-to-order text-right">
+        <h3 class="info-text">Enter your phone number:</h3>
+        <input class="phone" placeholder="+380 99 077 566 3 " type="text">
+        <button  onclick="sendOrder()"><h3>To order</h3></button>
+    </div>
+</div>
+
+<div class="container v"></div>
+    <h1 class="text-center v-text">Contacts</h1>
+<div class="container v-2"></div>
+
+<div class="container map">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8400903436!2d-74.25818940548147!3d40.705831640002806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1456143968302"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4 container-contact-text">
+                    <div class="col-md-12"><h3>New York, NY 10118-3299 USA</h3></div>
+                    <div class="col-md-12"><h3>Email: hrwpress@hrw.org</h3></div>
+                    <div class="col-md-12"><h3>Tel: +1-212-290-4700</h3></div>
+                    <div class="col-md-12"><h3>Skype: hrwpress</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="left">
+                    <h1>Flower delivery</h1>
+
+                </div>
+                <div class="right">
+                    <h1>+380990775663</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!--modal-->
+
+<div class="modal-bg" onclick="collBackOut(false)"></div>
+<div class="modal-mes-box">
+    <h1>Call Back</h1>
+    <input placeholder="Name" type="text">
+    <input placeholder="Phone" type="text">
+    <button onclick="collBackOut(true)"><h3>Send</h3></button>
+</div>
+
+<div class="popup-box">
+    <h2>Message sent!</h2>
+</div>
+<div class="popup-box-cart">
+    <h2>Order received!</h2>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="lib/animate.min.css">
+<script src="lib/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="lib/jquery.shuffle.min.js"></script>
+<script src="lib/jquery.smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>

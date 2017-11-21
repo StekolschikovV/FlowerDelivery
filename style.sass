@@ -1,0 +1,430 @@
+//ALL
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700)
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700)
+*
+  outline: none
+body
+  background: #f1e3d8
+  font-family: 'Lato', sans-serif
+h1
+  font-family: 'Lora', serif
+  font-weight: bold
+  margin: 0px
+  padding: 0px
+  font-size: 30px
+h2
+  margin: 0px
+  padding: 0px
+  font-size: 25px
+h3
+  margin: 0px
+  padding: 0px
+  font-size: 18px
+h4
+  margin: 0px
+  padding: 0px
+  font-size: 14px
+button
+  border-radius: 5px
+  border: 0px
+  padding: 5px 10px
+  color: #f1e3d8
+  background: #e07fac
+  transition-duration: 1s
+  &:hover
+    background: #61234a
+li
+  list-style-type: none
+
+//VENZELS
+
+.v
+  height: 30px
+  background: url("img/v.png")
+  background-repeat: no-repeat
+  background-position: center
+  margin: 50px auto 0px auto
+.v-2
+  height: 30px
+  background: url("img/v.png")
+  background-repeat: no-repeat
+  background-position: center
+  margin: 0px auto 50px auto
+  transform: rotate(180deg)
+.v-text
+  color: #61234a
+
+//HEADER
+
+header
+  height: 100vh
+  background: url("img/bg.jpg")
+  background-size: cover
+  background-position: bottom center
+  .left, .right
+    display: inline-block
+    color: #e07fac
+    margin-top: 25px
+  .right
+    float: right
+    button
+      margin-top: 5px
+      float: right
+  .promo-text
+    text-align: center
+    h1
+      font-size: 70px
+      margin-top: 35vh
+      color: #61234a
+    h2
+      color: #61234a
+  .arrow_box
+    cursor: pointer
+    width: 50px
+    height: 50px
+    position: absolute
+    margin: auto
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 20px
+    .arrow-1
+      margin: -10px auto
+      height: 5px
+      width: 5px
+      border: 10px solid transparent
+      animation: ar 3s infinite linear
+    .arrow-2
+      margin: -10px auto
+      height: 5px
+      width: 5px
+      border: 10px solid transparent
+      border-top: 12px solid green
+      animation: ar-2 3s infinite linear
+    .arrow-3
+      margin: -10px auto
+      height: 5px
+      width: 5px
+      border: 10px solid transparent
+      border-top: 12px solid green
+      animation: ar-3 3s infinite linear
+  @-webkit-keyframes ar
+    0%
+      border-top: 12px solid #e07fac
+    20%
+      border-top: 12px solid #61234a
+    100%
+      border-top: 12px solid #e07fac
+
+  @-webkit-keyframes ar-2
+    0%
+      border-top: 12px solid #e07fac
+    40%
+      border-top: 12px solid #61234a
+    100%
+      border-top: 12px solid #e07fac
+  @-webkit-keyframes ar-3
+    0%
+      border-top: 12px solid #e07fac
+    60%
+      border-top: 12px solid #61234a
+    100%
+      border-top: 12px solid #e07fac
+@media (max-width: 601px)
+  header
+    .promo-text
+      h1
+        margin-top: 10vh !important
+
+//COP
+
+.cop
+  text-align: center !important
+  img
+    height: 150px
+  h2
+    font-weight: bold
+    color: #84223b
+
+//how
+
+.how
+  color: #84223b
+  ul
+    li
+      margin-bottom: 10px
+      list-style-type: circle
+  h2
+    font-weight: bold
+    color: #61234a
+  .info
+    margin-top: 25px
+  .text
+    display: inline-block
+    color: #e07fac
+@media (max-width: 992px)
+  .how
+    ul
+      padding: 0 50px
+      li
+        margin-top: 10px
+//bouquets
+
+.bouquets
+  .active
+    transition-duration: 1s
+    color: #61234a
+  a
+    text-decoration: none
+    color: #e07fac
+  .list-inline
+    li
+      margin-right: 25px
+  li
+    margin-top: 25px
+
+    text-align: center
+    padding: 0
+  img
+    margin: auto
+    min-width: 250px
+  .container-product
+    width: 100%
+    height: 100%
+    background: red
+    position: relative
+    img
+      width: 100%
+img.img-responsive.hover-img
+  position: absolute
+  top: 0
+  left: 0
+  margin: auto
+  left: 0
+  right: 0
+  opacity: 0
+  transition-duration: 1s
+.show-img
+  transition-duration: 1s
+  opacity: 1 !important
+@media (max-width: 992px)
+  .container-contact-text
+    padding: 25px 0
+//cart
+
+.cart
+  .text-right
+    display: none
+  .list-cart
+    padding: 0%
+    margin: 0
+  .remove, .minus, .plus
+    border-radius: 50% !important
+    width: 38px !important
+    height: 38px !important
+    text-align: center
+  li
+    margin-bottom: 25px
+  color: #e07fac
+  .quantity
+    margin: 0 10px
+  .img-in-cart
+    width: 15%
+    margin: 0
+  .title-in-cart
+    width: 40%
+  .price-in-cart
+    width: 10%
+  .quantity-in-cart
+    width: 30%
+  .remove
+    width: 5%
+    cursor: pointer
+  .img-in-cart, .title-in-cart, .price-in-cart, .remove, .title-in-cart, .quantity-in-cart,.plus,.quantity,.minus
+    text-align: center
+    display: inline-block
+
+.container-to-order
+  input
+    margin-top: 50px
+    border: 0px
+    padding: 5px 10px 4px 10px
+    border-radius: 5px
+    width: 25%
+    transition-duration: 2s
+  .info-text
+    display: inline-block
+    margin-right: 10px
+
+@media (max-width: 992px)
+  .cart
+    .container-to-order
+      .info-text
+        display: none
+    input
+      width: 50%
+    .img-in-cart
+      width: 20%
+    .title-in-cart
+      width: 60%
+    .price-in-cart
+      width: 20%
+    .remove
+      display: none
+    .quantity-in-cart
+      display: none
+@media (max-width: 500px)
+  .cart
+    input
+      width: 70%
+.error
+  animation: err 1s  linear
+  @-webkit-keyframes err
+    0%
+      border: 3px solid red
+      margin-right: 25px
+      margin-top: 25px
+    10%
+      margin-right: 0px
+      margin-top: 0px
+    20%
+      margin-right: 25px
+      margin-top: 25px
+    30%
+      margin-right: 0px
+      margin-top: 0px
+    40%
+      margin-right: 25px
+      margin-top: 25px
+    50%
+      margin-right: 0px
+      margin-top: 0px
+    60%
+      margin-right: 25px
+      margin-top: 25px
+    70%
+      margin-right: 0px
+      margin-top: 0px
+    80%
+      margin-right: 25px
+      margin-top: 25px
+    90%
+      margin-right: 0px
+      margin-top: 0px
+    100%
+      margin-right: 25px
+      border: 3px solid red
+      margin-top: 25px
+//map
+
+.map
+  margin-bottom: 25px
+  color: #61234a
+  h3
+    margin-bottom: 10px
+  iframe
+    width: 100%
+    height: 50vh
+
+//footer
+
+footer
+  margin-top: -10px
+  padding: 15px 0px 30px 0px
+  background: #61234a
+  z-index: 999
+  .left, .right
+    display: inline-block
+    color: #e07fac
+    margin-top: 25px
+  .right
+    float: right
+    button
+      margin-top: 5px
+      float: right
+  .promo-text
+    text-align: center
+    h1
+      font-size: 70px
+      margin-top: 20vh
+      color: #61234a
+    h2
+      color: #61234a
+@media (max-width: 601px)
+  footer
+    .right
+      display: none
+    .left
+      text-align: center
+      width: 100%
+
+//modal
+
+.modal-bg
+  width: 100%
+  height: 100%
+  position: fixed
+  z-index: 100
+  background: #61234a
+  opacity: 0.5
+  //display: block
+  display: none
+  top: 0
+.modal-mes-box
+  border-radius: 5px
+  width: 100%
+  max-width: 280px
+  height: 100%
+  max-height: 265px
+  position: fixed
+  z-index: 101
+  background: #61234a
+  //display: block
+  display: none
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  button
+    margin-right: 10%
+    float: right
+    &:hover
+      background: #e07fac
+  input
+    width: 80%
+    margin: 25px auto
+    display: block
+    border: 0px
+    padding: 5px 10px
+    border-radius: 5px
+  h1
+    text-align: center
+    color: white
+    padding: 20px
+    border-bottom: 1px solid white
+.popup-box
+  border-top-right-radius: 5px
+  background: red
+  position: fixed
+  display: block
+  z-index: 102
+  bottom: 0
+  background: #61234a
+  display: none
+  h2
+    padding: 25px
+    color: white
+.popup-box-cart
+  border-top-right-radius: 5px
+  background: red
+  position: fixed
+  display: block
+  z-index: 102
+  bottom: 0
+  background: #61234a
+  display: none
+  h2
+    padding: 25px
+    color: white
